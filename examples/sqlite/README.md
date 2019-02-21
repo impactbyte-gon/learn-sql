@@ -35,3 +35,11 @@ VALUES
 ```sql
 SELECT * FROM users;
 ```
+
+Output:
+
+```txt
+1|Haidar|haidar@gmail.com
+2|Hanif|hanif@gmail.com
+3|Impact|impactbyte@gmail.com
+```
