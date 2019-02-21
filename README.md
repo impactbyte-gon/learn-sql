@@ -5,6 +5,8 @@ Learn SQL with:
 - [SQLite](examples/sqlite/README.md)
 - [MySQL](examples/mysql/README.md)
 
-UPDATE mysql.user SET authentication_string='helloworld' WHERE User='root';
+Update your password to use native password:
 
-update user set authentication_string=password('helloworld') where user='root';
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mynewpassword';
+```
