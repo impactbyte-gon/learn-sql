@@ -1,2 +1,6 @@
-# learn-sql
-Learn SQL
+# Learn SQL
+
+Learn SQL with:
+
+- SQLite
+- MySQL

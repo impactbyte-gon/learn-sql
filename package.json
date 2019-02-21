@@ -1,0 +1,23 @@
+{
+  "name": "learn-sql",
+  "version": "1.0.0",
+  "description": "Learn SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impactbyte-gon/learn-sql.git"
+  },
+  "keywords": [
+    "learn",
+    "sql"
+  ],
+  "author": "M Haidar Hanif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/impactbyte-gon/learn-sql/issues"
+  },
+  "homepage": "https://github.com/impactbyte-gon/learn-sql#readme"
+}
