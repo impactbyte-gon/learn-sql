@@ -10,7 +10,20 @@ sudo apt isntall mysql-server
 ## SETUP
 
 ```sh
+mysql_secure_installation
+```
 
+## RUN
+
+```sh
+mysql -u root -p
+```
+
+## CREATE DATABASE
+
+```sql
+CREATE DATABASE mytasks;
+USE mytasks;
 ```
 
 ## CREATE TABLE

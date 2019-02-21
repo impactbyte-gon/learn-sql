@@ -4,10 +4,10 @@ const sqlite = require('sqlite')
 
 const app = express()
 const port = process.env.PORT || 8000
-const dbPromise = sqlite.open(process.env.DB_PATH, { Promise })
+const sqliteDB = sqlite.open(process.env.DB_PATH, { Promise })
 
 app.get('/users', async (req, res) => {
-  const db = await dbPromise // slow process
+  const db = await sqliteDB // slow process
   const users = await db.all('SELECT * FROM users') // slow process
   res.send({
     message: 'Get all users',
@@ -16,7 +16,7 @@ app.get('/users', async (req, res) => {
 })
 
 app.get('/users/:id', async (req, res) => {
-  const db = await dbPromise
+  const db = await sqliteDB
   const user = await db.get(`SELECT * FROM users WHERE id = ${req.params.id}`)
 
   res.send({
