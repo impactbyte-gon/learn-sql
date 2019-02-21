@@ -4,6 +4,13 @@ const express = require('express')
 const app = express()
 const port = 8000
 
+// using sqlite
+// const knex = require('knex')({
+//   client: 'sqlite3',
+//   connection: { filename: process.env.DB_PATH || './sqlite.db' }
+// })
+
+// using mysql
 const knex = require('knex')({
   client: 'mysql2',
   connection: {
