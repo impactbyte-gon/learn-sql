@@ -1,5 +1,7 @@
 # Using SQLite
 
+## Table
+
 Table:
 
 | id  | name   | email            |
@@ -16,4 +18,14 @@ CREATE TABLE users (
   name VARCHAR(50),
   email VARCHAR(50)
 );
+```
+
+## Insert Data
+
+```sql
+INSERT INTO users (name, email)
+VALUES
+('Haidar', 'haidar@gmail.com'),
+('Hanif', 'hanif@gmail.com'),
+('Impact', 'impactbyte@gmail.com');
 ```
