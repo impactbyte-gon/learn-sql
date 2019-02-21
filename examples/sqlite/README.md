@@ -43,3 +43,10 @@ Output:
 2|Hanif|hanif@gmail.com
 3|Impact|impactbyte@gmail.com
 ```
+
+## DUMP DATA
+
+```
+.output dumpfilename.sql
+.dump
+```
