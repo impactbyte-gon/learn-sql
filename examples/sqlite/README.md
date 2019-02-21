@@ -1,6 +1,6 @@
 # Using SQLite
 
-## Table
+## CREATE TABLE
 
 Table:
 
@@ -20,7 +20,7 @@ CREATE TABLE users (
 );
 ```
 
-## Insert Data
+## INSERT DATA
 
 ```sql
 INSERT INTO users (name, email)
@@ -28,4 +28,10 @@ VALUES
 ('Haidar', 'haidar@gmail.com'),
 ('Hanif', 'hanif@gmail.com'),
 ('Impact', 'impactbyte@gmail.com');
+```
+
+## SELECT DATA
+
+```sql
+SELECT * FROM users;
 ```
