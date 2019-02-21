@@ -12,9 +12,8 @@ SQL Create Table:
 
 ```sql
 CREATE TABLE users (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(50),
-  email VARCHAR(50),
-  PRIMARY KEY(id)
+  email VARCHAR(50)
 );
 ```
