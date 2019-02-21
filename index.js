@@ -21,6 +21,16 @@ app.get('/users', async (req, res) => {
   })
 })
 
+app.get('/users/:id', async (req, res) => {
+  res.send({
+    message: 'List of all users',
+    user: await knex
+      .select()
+      .from('users')
+      .where('id', Number(req.params.id))
+  })
+})
+
 app.listen(port, () => {
   console.log(`Express app is listening on localhost:${port}`)
 })
