@@ -1,5 +1,9 @@
 require('dotenv').config()
 
+const express = require('express')
+const app = express()
+const port = 8000
+
 const knex = require('knex')({
   client: 'mysql2',
   connection: {
@@ -10,14 +14,13 @@ const knex = require('knex')({
   }
 })
 
-// WAY 1
-const getUsers = async () => {
-  const rows = await knex.select().from('users')
-  console.log(rows)
-}
-getUsers()
+app.get('/users', async (req, res) => {
+  res.send({
+    message: 'List of all users',
+    users: await knex.select().from('users')
+  })
+})
 
-// WAY 2
-knex('users').then(rows => {
-  console.log(rows)
+app.listen(port, () => {
+  console.log(`Express app is listening on localhost:${port}`)
 })

@@ -8,5 +8,5 @@ Learn SQL with:
 Update your password to use native password:
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mynewpassword';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'change_this_password';
 ```
