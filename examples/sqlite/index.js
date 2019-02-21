@@ -19,16 +19,10 @@ app.get('/users/:id', async (req, res) => {
   const db = await dbPromise
   const user = await db.get(`SELECT * FROM users WHERE id = ${req.params.id}`)
 
-  if (user) {
-    res.send({
-      message: 'Get one user',
-      user: user
-    })
-  } else {
-    res.send({
-      message: 'Failed to get one user'
-    })
-  }
+  res.send({
+    message: 'Get one user',
+    user: user
+  })
 })
 
 app.listen(port, () => {
