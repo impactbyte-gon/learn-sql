@@ -23,7 +23,22 @@ mysql -u root -p
 
 ```sql
 CREATE DATABASE mytasks;
+```
+
+Output:
+
+```txt
+Query OK, 1 row affected (0.01 sec)
+```
+
+```sql
 USE mytasks;
+```
+
+Output:
+
+```txt
+Database changed
 ```
 
 ## CREATE TABLE
@@ -40,7 +55,7 @@ SQL Create Table:
 
 ```sql
 CREATE TABLE users (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(50),
   email VARCHAR(50)
 );
