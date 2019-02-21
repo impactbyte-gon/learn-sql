@@ -1,4 +1,17 @@
-# Using SQLite
+# Using MySQL
+
+## INSTALLATION
+
+```sh
+brew install mysql
+sudo apt isntall mysql-server
+```
+
+## SETUP
+
+```sh
+
+```
 
 ## CREATE TABLE
 
@@ -42,23 +55,4 @@ Output:
 1|Haidar|haidar@gmail.com
 2|Hanif|hanif@gmail.com
 3|Impact|impactbyte@gmail.com
-```
-
-```sql
-SELECT name FROM users;
-```
-
-Output:
-
-```txt
-1|Haidar
-2|Hanif
-3|Impact
-```
-
-## DUMP DATA
-
-```
-.output dumpfilename.sql
-.dump
 ```

@@ -2,5 +2,5 @@
 
 Learn SQL with:
 
-- SQLite
-- MySQL
+- [SQLite](examples/sqlite/README.md)
+- [MySQL](examples/mysql/README.md)
