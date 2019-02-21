@@ -59,6 +59,6 @@ Output:
 ## DUMP DATA
 
 ```
-.output dumpfilename.sql
+.output mytasks-dump.sql
 .dump
 ```

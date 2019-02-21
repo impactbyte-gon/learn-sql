@@ -61,6 +61,10 @@ CREATE TABLE users (
 );
 ```
 
+```txt
+Query OK, 0 rows affected (0.01 sec)
+```
+
 ## INSERT DATA
 
 ```sql
@@ -69,6 +73,13 @@ VALUES
 ('Haidar', 'haidar@gmail.com'),
 ('Hanif', 'hanif@gmail.com'),
 ('Impact', 'impactbyte@gmail.com');
+```
+
+Output:
+
+```txt
+Query OK, 3 rows affected (0.02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
 ```
 
 ## SELECT DATA
@@ -80,7 +91,21 @@ SELECT * FROM users;
 Output:
 
 ```txt
-1|Haidar|haidar@gmail.com
-2|Hanif|hanif@gmail.com
-3|Impact|impactbyte@gmail.com
++----+--------+----------------------+
+| id | name   | email                |
++----+--------+----------------------+
+|  1 | Haidar | haidar@gmail.com     |
+|  2 | Hanif  | hanif@gmail.com      |
+|  3 | Impact | impactbyte@gmail.com |
++----+--------+----------------------+
+3 rows in set (0.00 sec)
 ```
+
+## DUMP DATA
+
+```sh
+cd examples/mysql
+mysqldump -u root -p --databases mytasks > mytasks-dump.sql
+```
+
+Then check the `mytasks-dump.sql` file.
